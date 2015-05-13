@@ -38,6 +38,7 @@ void MergeSort::merge(std::vector<int>& vec, int p, int q, int r)
 		{
 			vec[k] = highHalf[j];
 			++j;
+			inversions += (lowHalf.size() - i);
 		}
 		++k;
 	}
@@ -59,7 +60,6 @@ void MergeSort::merge(std::vector<int>& vec, int p, int q, int r)
 		++j;
 		++k;
 	}
-
 }
 
 void MergeSort::merge_sort(std::vector<int>& vec, int p, int r)
