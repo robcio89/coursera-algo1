@@ -73,8 +73,14 @@ void MergeSort::merge_sort(std::vector<int>& vec, int p, int r)
 	}
 }
 
+unsigned int MergeSort::get_inversion() const
+{
+	return inversions;
+}
+
 MergeSort::MergeSort()
 {
+	inversions = 0;
 }
 
 
