@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "../PQ1/FileReader.h"
-#include "../PQ1/MergeSort.h"
+#include "../PQ12/FileReader.h"
+#include "../PQ12/MergeSort.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -210,6 +210,5 @@ namespace PQ1_UT
 
 			Assert::AreEqual(solution, m.get_inversion());
 		}
-
 	};
 }

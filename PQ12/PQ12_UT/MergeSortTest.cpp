@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include <math.h>
-#include "../PQ1/MergeSort.h"
+#include "../PQ12/MergeSort.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

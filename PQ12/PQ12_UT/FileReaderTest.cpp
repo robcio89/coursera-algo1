@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "../PQ1/FileReader.h"
+#include "../PQ12/FileReader.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
