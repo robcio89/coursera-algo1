@@ -6,7 +6,7 @@ void MergeSort::merge(std::vector<int>& vec, int p, int q, int r)
 	std::vector<int> highHalf;
 
 	int k = p;
-	int i, j;
+	unsigned int i, j;
 
 	for (i = 0; k <= q; i++, k++)
 	{
@@ -66,7 +66,7 @@ void MergeSort::merge_sort(std::vector<int>& vec, int p, int r)
 {
 	if (p < r)
 	{
-		auto q = floor((p + r) / 2);
+		auto q = static_cast<int>( floor((p + r) / 2));
 		merge_sort(vec, p, q);
 		merge_sort(vec, q + 1, r);
 		merge(vec, p, q, r);

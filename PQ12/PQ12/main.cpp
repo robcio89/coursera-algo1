@@ -1,4 +1,6 @@
 #include <iostream>
+#include "FileReader.h"
+#include "MergeSort.h"
 
 int main()
 {
