@@ -5,9 +5,13 @@ void QuickSort::sort(std::vector<int>& input, int p, int r)
 	if (p < r)
 	{
 		auto q = partition(input, p, r);
+		
 		sort(input, p, q - 1);
 		sort(input, q + 1, r);
+
+		comparisons += input.size() - 1;
 	}
+	
 }
 
 int QuickSort::partition(std::vector<int>& input, int p, int r)
@@ -25,6 +29,7 @@ int QuickSort::partition(std::vector<int>& input, int p, int r)
 		}
 	}
 	swap(input, minEnd, r);
+	
 	return minEnd;
 }
 
@@ -35,8 +40,14 @@ void QuickSort::swap(std::vector<int>& input, int first_index, int second_index)
 	input[second_index] = temp;
 }
 
+int QuickSort::get_comparisons() const
+{
+	return comparisons;
+}
+
 QuickSort::QuickSort()
 {
+	comparisons = 0;
 }
 
 

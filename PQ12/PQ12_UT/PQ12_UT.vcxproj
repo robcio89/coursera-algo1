@@ -92,11 +92,17 @@
   <ItemGroup>
     <ClCompile Include="GeneralSortTest.cpp" />
     <ClCompile Include="MergeSortTest.cpp" />
+    <ClCompile Include="QuickSortTest.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="FileReaderTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PQ12\PQ12.vcxproj">
+      <Project>{a78f6fdc-85fc-4e71-95b6-59141432b810}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
