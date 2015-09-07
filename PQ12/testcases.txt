@@ -53,3 +53,11 @@ ANS - 9
 TEST CASE - Reverse Sorted
 A - (10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
 ANS - 45
+
+
+
+QS
+https://class.coursera.org/algo-008/forum/thread?thread_id=212
+
+https://class.coursera.org/algo-008/forum/thread?thread_id=172
+
